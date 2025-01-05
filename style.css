@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IS:wght@100..400&display=swap');
+
+:root {
+    --cor-principal: #171410;
+    --cor-secundaria: #474448;
+    --cor-destaque: #d6d5d0;
+    --cor-destaque-2: #f9f9f9;
+  }
+
+body, section, article, main, aside, footer, img, nav, ul, li, a, h1, h2, h3, div, p, figure, figcaption{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: var(--cor-principal);
+    background-image: url(images/backImage.gif);
+}
+
+.carossel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+}
+
+.slides img {
+    width: 100%;
+}
+
+.text_title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    font-family: "Dancing Script", serif;
+    font-size: 2rem;
+
+    background: linear-gradient(90deg, #f0575c,#ff9a9e , #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container_p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text_p{
+    color: var(--cor-destaque-2);
+    font-family: "Dancing Script", serif;
+    font-size: 21px;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    margin-top: 2.2rem;
+    border: none;
+    background: linear-gradient(90deg, #f0575c, #ff9a9e, #fad0c4);
+    border-radius: 2px;
+}
+
+#countdown_container p {
+    width: 80%;
+
+    font-family: "Dancing Script", serif;
+    font-size: larger;
+
+    color: #b03060;
+    background-color: var(--cor-destaque-2);
+    border: 1px solid #f4c2c2;
+    border-radius: 8px;
+
+    padding: 7px;
+    margin: 20px auto;
+
+    box-shadow: rgba(232, 57, 185, 0.9) 0px 3px 10px;
+    text-align: center;
+}
+
+@media(min-width: 708px) {
+    .carossel {
+        width: 58%;
+        overflow: hidden;
+
+        margin: 0 auto;
+        height: 800px;
+
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .container_p {
+        width: 58%;
+    }
+
+    .slides img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #countdown_container p {
+        width: 40%;
+    }
+}
