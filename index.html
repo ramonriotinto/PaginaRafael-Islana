@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="images/favicon-.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="index.js" defer></script>
         <title>Rafael & Islana</title>
     </head>
     <body>
-        <audio src="music/Iframe Justin Timberlake - Mirrors.mp3" autoplay loop></audio>
+        <audio id="background-audio" src="music/Justin Timberlake - Mirrors (Lyrics).mp3" autoplay muted loop></audio>
 
         <div class="carossel">
             <div class="slides">
@@ -21,6 +22,12 @@
                 <img src="images/6.jpeg" alt="Imagem 6">
                 <img src="images/7.jpeg" alt="Imagem 7">
             </div>
+        </div>
+
+        <div class="container_button_music">
+            <button id="unmute-button">
+                <i class="fas fa-play"></i> Play Music
+            </button>
         </div>
 
         <h1 class="text_title">Rafael e Islana</h1>

@@ -58,3 +58,14 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+///
+
+const audio = document.getElementById('background-audio');
+const button = document.getElementById('unmute-button');
+
+button.addEventListener('click', () => {
+    audio.muted = false;
+    audio.play();
+    button.style.display = 'none';
+});

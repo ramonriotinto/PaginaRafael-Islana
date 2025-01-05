@@ -34,7 +34,7 @@ body, section, article, main, aside, footer, img, nav, ul, li, a, h1, h2, h3, di
 
 .text_title {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 
     font-family: "Dancing Script", serif;
@@ -81,6 +81,24 @@ hr {
 
     box-shadow: rgba(232, 57, 185, 0.9) 0px 3px 10px;
     text-align: center;
+}
+
+.container_button_music {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+#unmute-button {
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+
+    cursor: pointer;
+
+    color: var(--cor-destaque-2);
+    background: linear-gradient(90deg, #f0575c, #ff9a9e, #fad0c4);
 }
 
 @media(min-width: 708px) {
